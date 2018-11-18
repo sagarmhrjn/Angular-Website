@@ -9,6 +9,14 @@
 - 2.4 Navigation
 - 2.5 Social Elements
 - 2.6 Images
+.icons span {
+  display: none;
+}
+
+.icons li a {
+  margin: 10px;
+}
+
 3. Fonts and Headings
 4. Banner
 - 4.1 SignUp Form
@@ -659,6 +667,14 @@ nav#nav-mobile a:hover {
 }
 
 /* --------- 2.5 Social Elements ---------- */
+
+.icons span {
+  display: none;
+}
+
+.icons li a {
+  margin: 10px;
+}
 
 #header .col-4 {
     text-align: right;
@@ -1396,8 +1412,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;

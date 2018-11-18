@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ConfigService } from "../config.service";
 
 @Component({
-  selector: 'app-social',
-  templateUrl: './social.component.html',
-  styleUrls: ['./social.component.css']
+  selector: "app-social",
+  templateUrl: "./social.component.html",
+  styleUrls: ["./social.component.css"]
 })
 export class SocialComponent implements OnInit {
-
-  constructor() { }
+  social = {};
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
+    this.social = this.getSocial();
   }
 
+  getSocial() {
+    return this.config.getConfig().socialSites;
+  }
 }
