@@ -126,9 +126,7 @@ export const configuration = {
     ]
   },
   pricing: {
-    tagLine: "YOUR CHOICE",
-    title: "We have the right package for you",
-    description: "",
+    tagLine: "YOUR CHOICE", title: "We have the right package for you", description: "",
     plans: [
       {
         title: "PERSONAL",
@@ -205,32 +203,103 @@ export const configuration = {
     developerLink: ""
   },
   socialSites: [
-    {
-      link: "https://www.facebook.com/",
-      icon: "facebook",
-      title: 'Facebook'
-    },
-    {
-
-      link: "http://google.com/+",
-      icon: "google",
-      title: 'Google'
-    },
-    {
-
-      link: "http://www.twitter.com/",
-      icon: "twitter",
-      title: 'Twitter'
-    },
-    {
-      link: "http://www.instagram.com/",
-      icon: "instagram",
-      title: 'Instagram'
-    },
-    {
-      link: "http://www.behance.net",
-      icon: "behance",
-      title: 'Behance'
-    }
-  ]
+    { title: 'Facebook', link: 'https://www.facebook.com/', icon: 'facebook' },
+    { title: 'Google+', link: 'https://www.facebook.com/', icon: 'google-plus' },
+    { title: 'Twitter', link: 'https://www.facebook.com/', icon: 'twitter' },
+    { title: 'Instagram', link: 'https://www.facebook.com/', icon: 'instagram' },
+    { title: 'Behance', link: 'https://www.facebook.com/', icon: 'behance' },
+  ],
+  blog: {
+    tagLine: "MY THOUGHTS", title: "Let's leave a while for my thoughts",
+    posts: [
+      {
+        id: 1,
+        title: 'THe First Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-1.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 2,
+        title: 'THe Second Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-3.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 3,
+        title: 'THe Third Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-4.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 4,
+        title: 'THe Fourth Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-5.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 5,
+        title: 'THe Fifth Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-6.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 6,
+        title: 'THe Sixth Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-1.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 7,
+        title: 'THe Seventh Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-2.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 8,
+        title: 'THe Eight Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-3.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 9,
+        title: 'THe Ninth Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-4.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 10,
+        title: 'THe Ten Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-5.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+      {
+        id: 11,
+        title: 'THe Eleven Article',
+        author: 'Sagar Mhrjn',
+        image: 'gallery-image-6.jpg',
+        publishedDate: '2012-03-19T07:22Z',
+        excert: 'This is the summary of the article'
+      },
+    ]
+  }
 };

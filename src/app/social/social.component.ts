@@ -7,11 +7,11 @@ import { ConfigService } from "../config.service";
   styleUrls: ["./social.component.css"]
 })
 export class SocialComponent implements OnInit {
-  social = {};
+  socialSites = {};
   constructor(private config: ConfigService) { }
 
   ngOnInit() {
-    this.social = this.getSocial();
+    this.socialSites = this.getSocial();
   }
 
   getSocial() {

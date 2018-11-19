@@ -16,6 +16,9 @@ import { AppRoutingModule } from "./app-routing.module";
 
 //import ConfigService and declare it as a providers
 import { ConfigService } from "./config.service";
+import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './post/post.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { ConfigService } from "./config.service";
     FooterComponent,
     HeaderComponent,
     SocialComponent,
-    NavigationComponent
+    NavigationComponent,
+    BlogComponent,
+    PostComponent,
+    ArticleComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

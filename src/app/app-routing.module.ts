@@ -12,6 +12,8 @@ import { TestimonialComponent } from "./testimonial/testimonial.component";
 import { ClientsComponent } from "./clients/clients.component";
 import { PricingComponent } from "./pricing/pricing.component";
 import { HeaderComponent } from "./header/header.component";
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 // 3rd Add Routes:  2 properties path, component
 const routes: Routes = [
@@ -22,7 +24,9 @@ const routes: Routes = [
   { path: "Services", component: ContentComponent },
   { path: "Testimonial", component: TestimonialComponent },
   { path: "Clients", component: ClientsComponent },
-  { path: "Pricing", component: PricingComponent }
+  { path: "Pricing", component: PricingComponent },
+  { path: "Blog", component: BlogComponent },
+  { path: 'Article/:id', component: ArticleComponent }
 ];
 
 @NgModule({
@@ -31,4 +35,4 @@ const routes: Routes = [
   declarations: [],
   exports: [RouterModule] // makes router directives available for use in the AppModule components that will need them.
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

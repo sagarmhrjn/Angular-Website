@@ -1,29 +1,9 @@
-<!--Social Icons in Header-->
+<!-- Social Icons in Header -->
 <ul class="icons">
-  <li *ngFor='let social of socialSites'>
-    <a href="{{social.link}}">
-      <i class="fa fa-{{social.icon}} fa-1x"></i><span>{{social.title}}</span>
-    </a>
-  </li>
-  <li>
-    <a href="http://google.com/+username">
-      <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-    </a>
-  </li>
-  <li>
-    <a href="http://www.twitter.com/username">
-      <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
-    </a>
-  </li>
-  <li>
-    <a href="http://www.instagram.com/username">
-      <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-    </a>
-  </li>
-  <li>
-    <a href="http://www.behance.net">
-      <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+  <li *ngFor="let s of socialSites">
+    <a target='_blank' href="{{s.link}}">
+      <i class="fa fa-{{s.icon}} fa-1x"></i><span>{{ s.title }}</span>
     </a>
   </li>
 </ul>
-<!--End of Social Icons in Header-->
+<!-- End of Social Icons in Header -->
