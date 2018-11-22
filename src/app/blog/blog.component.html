@@ -1,13 +1,14 @@
-<!-- Pricing Tables -->
-<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+<!-- Blog Tables -->
+<section id="blog" class="secondary-color text-center scrollto clearfix ">
   <div class="row clearfix">
     <div class="section-heading">
       <h3>{{ blog.tagLine }}</h3>
       <h2 class="section-title">{{ blog.title | uppercase }}</h2>
     </div>
-    <div class="post-block col-3 wow fadeInUp" data-wow-delay="0.4s" *ngFor="let post of blog.posts">
+    <div class="post-block col-3 wow fadeInUp" data-wow-delay="0.4s" *ngFor="let post of pages">
       <app-post [post]="post"></app-post>
     </div>
   </div>
+  <app-pagination [pager]="pager" (setPage)="setPage($event)"></app-pagination>
 </section>
-<!-- End of Pricing Tables -->
+<!-- End of Blog Tables -->

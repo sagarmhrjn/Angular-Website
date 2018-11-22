@@ -14,6 +14,7 @@ import { PricingComponent } from "./pricing/pricing.component";
 import { HeaderComponent } from "./header/header.component";
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { NotfoundComponent } from './notfound/notfound.component'
 
 // 3rd Add Routes:  2 properties path, component
 const routes: Routes = [
@@ -26,7 +27,9 @@ const routes: Routes = [
   { path: "Clients", component: ClientsComponent },
   { path: "Pricing", component: PricingComponent },
   { path: "Blog", component: BlogComponent },
-  { path: 'Article/:id', component: ArticleComponent }
+  { path: 'Article/:id', component: ArticleComponent },
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({
