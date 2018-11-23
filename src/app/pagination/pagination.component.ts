@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class PaginationComponent implements OnInit {
 
   @Input() pager;
+  // EventEmitter: creates an instance of this class that can deliver synchronisely or unsychronisely
   @Output() setPage: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
@@ -16,7 +17,7 @@ export class PaginationComponent implements OnInit {
   }
 
   setCurrentPage(pageNumber: number) {
-    this.setPage.emit(pageNumber);
+    this.setPage.emit(pageNumber);    // emits/produce an event containing value
   }
 
 }

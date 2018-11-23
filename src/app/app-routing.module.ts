@@ -14,19 +14,26 @@ import { PricingComponent } from "./pricing/pricing.component";
 import { HeaderComponent } from "./header/header.component";
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
-import { NotfoundComponent } from './notfound/notfound.component'
+import { NotfoundComponent } from './notfound/notfound.component';
+import { RouteguardService } from './routeguard.service';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 // 3rd Add Routes:  2 properties path, component
 const routes: Routes = [
   { path: "", redirectTo: "/Home", pathMatch: "full" },
   { path: "Home", component: HeaderComponent },
+  { path: "login", component: LoginComponent },
+  { path: "signup", component: SignupComponent },
+  { path: "contacts", component: ContactusComponent },
   { path: "About", component: IntroComponent },
   { path: "Gallery", component: GalleryComponent },
   { path: "Services", component: ContentComponent },
   { path: "Testimonial", component: TestimonialComponent },
   { path: "Clients", component: ClientsComponent },
   { path: "Pricing", component: PricingComponent },
-  { path: "Blog", component: BlogComponent },
+  { path: "Blog", component: BlogComponent, canActivate: [RouteguardService] },
   { path: 'Article/:id', component: ArticleComponent },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '/404' }
